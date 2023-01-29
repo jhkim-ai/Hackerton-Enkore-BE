@@ -19,7 +19,7 @@ public class TestController {
     private final TestService testService;
 
     // select
-    @GetMapping("/test") // http://127.0.0.1:8282/test
+    @GetMapping("/test") // http://localhost:8282/test
     public List<Map<String, Object>> testController() {
         return testService.testService();
     }
