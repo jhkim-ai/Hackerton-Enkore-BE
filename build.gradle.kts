@@ -19,8 +19,10 @@ repositories {
 }
 
 dependencies {
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-websocket")
+	runtimeOnly("com.h2database:h2")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
