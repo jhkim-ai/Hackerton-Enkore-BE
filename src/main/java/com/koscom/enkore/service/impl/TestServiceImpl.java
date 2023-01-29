@@ -5,6 +5,7 @@ import com.koscom.enkore.service.TestService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -16,6 +17,15 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public List<Map<String, Object>> testService() {
+
+        // insert 테스트
+        Map<String, Object> in = new HashMap<>();
+        in.put("userId", "하이요");
+        in.put("userName", "이름");
+        in.put("userType", "type");
+        in.put("userStat", "stat");
+        this.testInsertDao(in);
+
         return testDao.testDao();
     }
 
