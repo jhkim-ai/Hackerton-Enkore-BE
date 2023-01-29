@@ -10,4 +10,4 @@ CREATE TABLE USERS COMMENT '회원' (
     , USER_TYPE    VARCHAR(10)              COMMENT '회원 유형'
     , USER_STAT    VARCHAR(10)              COMMENT '회원 상태'
     , PRIMARY KEY (USER_ID)
-    );
+);
