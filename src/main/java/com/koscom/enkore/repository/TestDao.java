@@ -7,5 +7,9 @@ import java.util.Map;
 
 @Mapper
 public interface TestDao {
+
+    // test-mapper.xml 의 id = TestDao.java 의 함수명
+
     List<Map<String, Object>> testDao();
+    void testInsertDao(Map<String, Object> request);
 }

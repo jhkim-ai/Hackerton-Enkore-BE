@@ -18,4 +18,9 @@ public class TestServiceImpl implements TestService {
     public List<Map<String, Object>> testService() {
         return testDao.testDao();
     }
+
+    @Override
+    public void testInsertDao(Map<String, Object> request) {
+        testDao.testInsertDao(request);
+    }
 }

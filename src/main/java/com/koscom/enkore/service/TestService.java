@@ -5,4 +5,5 @@ import java.util.Map;
 
 public interface TestService {
     List<Map<String, Object>> testService();
+    void testInsertDao(Map<String, Object> request);
 }

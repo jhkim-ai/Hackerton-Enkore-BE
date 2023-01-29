@@ -6,4 +6,13 @@
         select * from users;
     </select>
 
+    <insert id="testInsertDao" parameterType="HashMap">
+        insert into users
+        values (
+          7
+        , '홍길남'
+        , 'NORMAL'
+        , 'ACTIVE'
+        )
+    </insert>
 </mapper>
