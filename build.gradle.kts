@@ -23,6 +23,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-websocket")
 	implementation("com.google.guava:guava:31.1-jre")
+	implementation("com.googlecode.json-simple:json-simple:1.1.1")
 
 	runtimeOnly("com.h2database:h2")
 	compileOnly("org.projectlombok:lombok")
