@@ -44,7 +44,8 @@ public class VideoRoomController {
     private ArrayList<TestSession> joinRoom(@Header("simpSessionId") String sessionId, JSONObject ob) {
 
         // 현재 들어온 세션 저장.
-        sessionIdList.add(new TestSession((String) ob.get("from"), sessionId));
+        sessionIdList.add(new TestSession(ob.get("from").toString(), sessionId));
+        System.out.println("sessionIdList");
         System.out.println(sessionIdList);
         return sessionIdList;
     }
@@ -69,6 +70,7 @@ public class VideoRoomController {
         data.put("toCall", ob.get("toCall"));
         data.put("from", ob.get("from"));
         data.put("signal", ob.get("signal"));
+        System.out.println("caller");
         System.out.println(data);
         return data;
     }
@@ -86,6 +88,7 @@ public class VideoRoomController {
         data.put("signal", ob.get("signal"));
         data.put("from", ob.get("from"));
         data.put("to", ob.get("to"));
+        System.out.println("answerCall");
         System.out.println(data);
         return data;
     }
