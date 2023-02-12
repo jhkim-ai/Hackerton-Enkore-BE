@@ -24,6 +24,9 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-websocket")
 	implementation("com.google.guava:guava:31.1-jre")
 	implementation("com.googlecode.json-simple:json-simple:1.1.1")
+	implementation("org.webjars:stomp-websocket:2.3.4")
+	implementation("org.webjars:sockjs-client:1.5.1")
+	implementation("com.google.code.gson:gson:2.9.0")
 
 	runtimeOnly("com.h2database:h2")
 	compileOnly("org.projectlombok:lombok")
