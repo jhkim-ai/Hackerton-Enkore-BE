@@ -31,11 +31,13 @@
 
 ### 5. JAR 파일 실행
 `windows`
+---
 1. `/프로젝트명/build/libs` 이동
 2. `java -jar [파일명].jar` 실행
 
 ### 6. JAR 파일 종료
 `windows`
+---
 1. `netstat -ano | find "8282"` 를 입력하여 PID 확인
 2. `taskkill /pid PID번호 /f` 를 입력하여 종료
 
