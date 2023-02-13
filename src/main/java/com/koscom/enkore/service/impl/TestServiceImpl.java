@@ -19,12 +19,12 @@ public class TestServiceImpl implements TestService {
     public List<Map<String, Object>> testService() {
 
         // insert 테스트
-        Map<String, Object> in = new HashMap<>();
-        in.put("userId", "하이요");
-        in.put("userName", "이름");
-        in.put("userType", "type");
-        in.put("userStat", "stat");
-        this.testInsertDao(in);
+//        Map<String, Object> in = new HashMap<>();
+//        in.put("userId", "하이요");
+//        in.put("userName", "이름");
+//        in.put("userType", "type");
+//        in.put("userStat", "stat");
+//        this.testInsertDao(in);
 
         return testDao.testDao();
     }
